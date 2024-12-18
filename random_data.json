@@ -1,0 +1,807 @@
+[
+  {
+    "model": "army.trooptype",
+    "pk": 1,
+    "fields": {
+      "name": "Пехота",
+      "description": "Пехота предназначена для боевых действий на суше."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 2,
+    "fields": {
+      "name": "Кавалерия",
+      "description": "Кавалерия использует боевых лошадей для маневренности."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 3,
+    "fields": {
+      "name": "Артиллерия",
+      "description": "Артиллерия специализируется на огневой поддержке."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 4,
+    "fields": {
+      "name": "Военно-воздушные силы",
+      "description": "Военно-воздушные силы ведут боевые действия в воздухе."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 5,
+    "fields": {
+      "name": "Военно-морской флот",
+      "description": "Военно-морской флот ведет боевые действия на воде."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 6,
+    "fields": {
+      "name": "Инженерные войска",
+      "description": "Инженерные войска обеспечивают строительство и поддержку инфраструктуры."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 7,
+    "fields": {
+      "name": "Войска связи",
+      "description": "Войска связи отвечают за коммуникации на поле боя."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 8,
+    "fields": {
+      "name": "Химические войска",
+      "description": "Химические войска ведут защиту от химических и биологических угроз."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 9,
+    "fields": {
+      "name": "Войска РЭБ",
+      "description": "Войска радиоэлектронной борьбы ведут борьбу с электронными системами противника."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 10,
+    "fields": {
+      "name": "Пограничные войска",
+      "description": "Пограничные войска охраняют государственную границу."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 11,
+    "fields": {
+      "name": "Специальные силы",
+      "description": "Специальные силы выполняют секретные и высокоточные операции."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 12,
+    "fields": {
+      "name": "Танковые войска",
+      "description": "Танковые войска используют бронетехнику для прорыва обороны."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 13,
+    "fields": {
+      "name": "Воздушно-десантные войска",
+      "description": "Воздушно-десантные войска предназначены для быстрых операций с воздуха."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 14,
+    "fields": {
+      "name": "Стратегические ракетные войска",
+      "description": "Ракетные войска обеспечивают ядерное сдерживание."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 15,
+    "fields": {
+      "name": "Войска материально-технического обеспечения",
+      "description": "Обеспечивают логистику и снабжение."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 16,
+    "fields": {
+      "name": "Медицинская служба",
+      "description": "Оказывает медицинскую помощь в условиях боевых действий."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 17,
+    "fields": {
+      "name": "Войска охраны",
+      "description": "Осуществляют охрану важных объектов."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 18,
+    "fields": {
+      "name": "Разведывательные войска",
+      "description": "Разведывательные войска собирают информацию о противнике."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 19,
+    "fields": {
+      "name": "Транспортные войска",
+      "description": "Транспортные войска занимаются перевозкой личного состава и грузов."
+    }
+  },
+  {
+    "model": "army.trooptype",
+    "pk": 20,
+    "fields": {
+      "name": "Противовоздушная оборона",
+      "description": "Защищает войска и объекты от воздушных атак."
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 1,
+    "fields": {
+      "country": "Россия",
+      "city": "Москва",
+      "address": "Кремль, 1",
+      "area": 500
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 2,
+    "fields": {
+      "country": "Россия",
+      "city": "Санкт-Петербург",
+      "address": "Дворцовая площадь, 2",
+      "area": 300
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 3,
+    "fields": {
+      "country": "Беларусь",
+      "city": "Минск",
+      "address": "Проспект Победителей, 14",
+      "area": 200
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 4,
+    "fields": {
+      "country": "Казахстан",
+      "city": "Астана",
+      "address": "Улица Достык, 32",
+      "area": 400
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 5,
+    "fields": {
+      "country": "Россия",
+      "city": "Екатеринбург",
+      "address": "Площадь 1905 года, 5",
+      "area": 350
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 6,
+    "fields": {
+      "country": "Россия",
+      "city": "Владивосток",
+      "address": "Улица Пушкинская, 15",
+      "area": 250
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 7,
+    "fields": {
+      "country": "Киргизия",
+      "city": "Бишкек",
+      "address": "Проспект Чуй, 10",
+      "area": 150
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 8,
+    "fields": {
+      "country": "Россия",
+      "city": "Новосибирск",
+      "address": "Красный проспект, 8",
+      "area": 280
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 9,
+    "fields": {
+      "country": "Армения",
+      "city": "Ереван",
+      "address": "Площадь Республики, 4",
+      "area": 190
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 10,
+    "fields": {
+      "country": "Россия",
+      "city": "Казань",
+      "address": "Кремлевская улица, 1",
+      "area": 310
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 11,
+    "fields": {
+      "country": "Таджикистан",
+      "city": "Душанбе",
+      "address": "Проспект Рудаки, 20",
+      "area": 220
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 12,
+    "fields": {
+      "country": "Россия",
+      "city": "Ростов-на-Дону",
+      "address": "Улица Большая Садовая, 3",
+      "area": 300
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 13,
+    "fields": {
+      "country": "Узбекистан",
+      "city": "Ташкент",
+      "address": "Проспект Амир Темур, 12",
+      "area": 400
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 14,
+    "fields": {
+      "country": "Россия",
+      "city": "Самара",
+      "address": "Площадь Куйбышева, 7",
+      "area": 350
+    }
+  },
+  {
+    "model": "army.location",
+    "pk": 15,
+    "fields": {
+      "country": "Россия",
+      "city": "Сочи",
+      "address": "Улица Ривьерская, 9",
+      "area": 180
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 1,
+    "fields": {
+      "number": "101",
+      "location": 1,
+      "troop_type": 1,
+      "number_of_platoons": 3
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 2,
+    "fields": {
+      "number": "102",
+      "location": 2,
+      "troop_type": 2,
+      "number_of_platoons": 2
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 3,
+    "fields": {
+      "number": "103",
+      "location": 3,
+      "troop_type": 3,
+      "number_of_platoons": 4
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 4,
+    "fields": {
+      "number": "104",
+      "location": 4,
+      "troop_type": 4,
+      "number_of_platoons": 3
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 5,
+    "fields": {
+      "number": "105",
+      "location": 5,
+      "troop_type": 5,
+      "number_of_platoons": 5
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 6,
+    "fields": {
+      "number": "106",
+      "location": 6,
+      "troop_type": 1,
+      "number_of_platoons": 3
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 7,
+    "fields": {
+      "number": "107",
+      "location": 7,
+      "troop_type": 2,
+      "number_of_platoons": 2
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 8,
+    "fields": {
+      "number": "108",
+      "location": 8,
+      "troop_type": 3,
+      "number_of_platoons": 4
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 9,
+    "fields": {
+      "number": "109",
+      "location": 9,
+      "troop_type": 4,
+      "number_of_platoons": 3
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 10,
+    "fields": {
+      "number": "110",
+      "location": 10,
+      "troop_type": 5,
+      "number_of_platoons": 5
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 11,
+    "fields": {
+      "number": "111",
+      "location": 11,
+      "troop_type": 1,
+      "number_of_platoons": 2
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 12,
+    "fields": {
+      "number": "112",
+      "location": 12,
+      "troop_type": 2,
+      "number_of_platoons": 6
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 13,
+    "fields": {
+      "number": "113",
+      "location": 13,
+      "troop_type": 3,
+      "number_of_platoons": 4
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 14,
+    "fields": {
+      "number": "114",
+      "location": 14,
+      "troop_type": 4,
+      "number_of_platoons": 5
+    }
+  },
+  {
+    "model": "army.militaryunit",
+    "pk": 15,
+    "fields": {
+      "number": "115",
+      "location": 15,
+      "troop_type": 5,
+      "number_of_platoons": 3
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 1,
+    "fields": {
+      "name": "Рота 1",
+      "number_of_personnel": 100,
+      "military_unit": 1
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 2,
+    "fields": {
+      "name": "Рота 2",
+      "number_of_personnel": 120,
+      "military_unit": 2
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 3,
+    "fields": {
+      "name": "Рота 3",
+      "number_of_personnel": 110,
+      "military_unit": 3
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 4,
+    "fields": {
+      "name": "Рота 4",
+      "number_of_personnel": 130,
+      "military_unit": 4
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 5,
+    "fields": {
+      "name": "Рота 5",
+      "number_of_personnel": 90,
+      "military_unit": 5
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 6,
+    "fields": {
+      "name": "Рота 6",
+      "number_of_personnel": 100,
+      "military_unit": 6
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 7,
+    "fields": {
+      "name": "Рота 7",
+      "number_of_personnel": 105,
+      "military_unit": 7
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 8,
+    "fields": {
+      "name": "Рота 8",
+      "number_of_personnel": 115,
+      "military_unit": 8
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 9,
+    "fields": {
+      "name": "Рота 9",
+      "number_of_personnel": 120,
+      "military_unit": 9
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 10,
+    "fields": {
+      "name": "Рота 10",
+      "number_of_personnel": 130,
+      "military_unit": 10
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 11,
+    "fields": {
+      "name": "Рота 11",
+      "number_of_personnel": 95,
+      "military_unit": 11
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 12,
+    "fields": {
+      "name": "Рота 12",
+      "number_of_personnel": 125,
+      "military_unit": 12
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 13,
+    "fields": {
+      "name": "Рота 13",
+      "number_of_personnel": 110,
+      "military_unit": 13
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 14,
+    "fields": {
+      "name": "Рота 14",
+      "number_of_personnel": 120,
+      "military_unit": 14
+    }
+  },
+  {
+    "model": "army.platoon",
+    "pk": 15,
+    "fields": {
+      "name": "Рота 15",
+      "number_of_personnel": 100,
+      "military_unit": 15
+    }
+  },
+    {
+        "model": "army.personnel",
+        "pk": 1,
+        "fields": {
+            "last_name": "Иванов",
+            "platoon": 1,
+            "position": "Командир роты",
+            "birth_year": 1980,
+            "service_start_year": 2000,
+            "years_of_service": 24,
+            "awards": "Орден Мужества",
+            "military_events": "Участие в операции 'Шторм'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 2,
+        "fields": {
+            "last_name": "Петров",
+            "platoon": 2,
+            "position": "Заместитель командира роты",
+            "birth_year": 1985,
+            "service_start_year": 2005,
+            "years_of_service": 19,
+            "awards": "Медаль 'За отвагу'",
+            "military_events": "Участие в операции 'Бархан'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 3,
+        "fields": {
+            "last_name": "Сидоров",
+            "platoon": 3,
+            "position": "Старшина роты",
+            "birth_year": 1990,
+            "service_start_year": 2010,
+            "years_of_service": 14,
+            "awards": "Орден 'За заслуги перед Отечеством'",
+            "military_events": "Участие в операции 'Гроза'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 4,
+        "fields": {
+            "last_name": "Кузнецов",
+            "platoon": 4,
+            "position": "Рядовой",
+            "birth_year": 1995,
+            "service_start_year": 2015,
+            "years_of_service": 9,
+            "awards": "Медаль 'За воинскую доблесть'",
+            "military_events": "Участие в учениях 'Меч'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 5,
+        "fields": {
+            "last_name": "Михайлов",
+            "platoon": 5,
+            "position": "Лейтенант",
+            "birth_year": 1992,
+            "service_start_year": 2012,
+            "years_of_service": 12,
+            "awards": "Орден 'За заслуги в службе'",
+            "military_events": "Участие в операции 'Барьер'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 6,
+        "fields": {
+            "last_name": "Николаев",
+            "platoon": 6,
+            "position": "Командир взвода",
+            "birth_year": 1988,
+            "service_start_year": 2008,
+            "years_of_service": 16,
+            "awards": "Медаль 'За храбрость'",
+            "military_events": "Участие в операции 'Феникс'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 7,
+        "fields": {
+            "last_name": "Васильев",
+            "platoon": 7,
+            "position": "Сержант",
+            "birth_year": 1987,
+            "service_start_year": 2007,
+            "years_of_service": 17,
+            "awards": "Медаль 'За спасение'",
+            "military_events": "Участие в учениях 'Молния'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 8,
+        "fields": {
+            "last_name": "Федоров",
+            "platoon": 8,
+            "position": "Младший лейтенант",
+            "birth_year": 1991,
+            "service_start_year": 2011,
+            "years_of_service": 13,
+            "awards": "Орден 'Звезда Героя'",
+            "military_events": "Участие в операции 'Шторм'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 9,
+        "fields": {
+            "last_name": "Дмитриев",
+            "platoon": 9,
+            "position": "Командир роты",
+            "birth_year": 1982,
+            "service_start_year": 2002,
+            "years_of_service": 22,
+            "awards": "Орден Почета",
+            "military_events": "Участие в операции 'Торнадо'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 10,
+        "fields": {
+            "last_name": "Александров",
+            "platoon": 10,
+            "position": "Рядовой",
+            "birth_year": 1996,
+            "service_start_year": 2016,
+            "years_of_service": 8,
+            "awards": "Медаль 'За защиту Родины'",
+            "military_events": "Участие в учениях 'Барьер'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 11,
+        "fields": {
+            "last_name": "Яковлев",
+            "platoon": 11,
+            "position": "Лейтенант",
+            "birth_year": 1983,
+            "service_start_year": 2003,
+            "years_of_service": 21,
+            "awards": "Медаль 'За заслуги перед Отечеством'",
+            "military_events": "Участие в операции 'Судьба'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 12,
+        "fields": {
+            "last_name": "Григорьев",
+            "platoon": 12,
+            "position": "Сержант",
+            "birth_year": 1990,
+            "service_start_year": 2010,
+            "years_of_service": 14,
+            "awards": "Медаль 'За храбрость'",
+            "military_events": "Участие в операции 'Гроза'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 13,
+        "fields": {
+            "last_name": "Лебедев",
+            "platoon": 13,
+            "position": "Рядовой",
+            "birth_year": 1997,
+            "service_start_year": 2017,
+            "years_of_service": 7,
+            "awards": "Орден Мужества",
+            "military_events": "Участие в операции 'Гроза'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 14,
+        "fields": {
+            "last_name": "Борисов",
+            "platoon": 14,
+            "position": "Младший сержант",
+            "birth_year": 1986,
+            "service_start_year": 2006,
+            "years_of_service": 18,
+            "awards": "Медаль 'За заслуги в службе'",
+            "military_events": "Участие в учениях 'Молния'"
+        }
+    },
+    {
+        "model": "army.personnel",
+        "pk": 15,
+        "fields": {
+            "last_name": "Павлов",
+            "platoon": 15,
+            "position": "Лейтенант",
+            "birth_year": 1994,
+            "service_start_year": 2014,
+            "years_of_service": 10,
+            "awards": "Медаль 'За доблесть'",
+            "military_events": "Участие в операции 'Сокрушение'"
+        }
+    }
+]

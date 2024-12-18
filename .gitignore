@@ -1,5 +1,4 @@
 venv/
 db.sqlite3
-random_data.json
 .idea/
 __pycache__/
