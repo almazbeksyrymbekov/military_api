@@ -25,8 +25,7 @@ SECRET_KEY = 'django-insecure-l6%bkk8y)04nd#up$szztgl&94=ugtq4+(3m6$j*3ms%n6seow
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
-
+ALLOWED_HOSTS = ['*']
 
 # Application definition
 
@@ -46,17 +45,22 @@ INSTALLED_APPS = [
 
 ]
 
-MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
+MIDDLEWARE=[
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+# CORS settings
 CORS_ORIGIN_ALLOW_ALL = True
+CORS_ALLOW_CREDENTIALS = True
+USE_X_FORWARDED_HOST = False
+
 
 ROOT_URLCONF = 'military.urls'
 
@@ -118,7 +122,7 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Your project description',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
-    'SWAGGER_UI_DIST': 'SIDECAR', 
+    'SWAGGER_UI_DIST': 'SIDECAR',
     'SWAGGER_UI_FAVICON_HREF': 'SIDECAR',
     'REDOC_DIST': 'SIDECAR',
 }
@@ -146,4 +150,4 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CSRF_TRUSTED_ORIGINS = ["https://broadly-adjusted-antelope.ngrok-free.app", "https://localhost", "https://127.0.0.1"]
+CSRF_TRUSTED_ORIGINS = ["https://broadly-adjusted-antelope.ngrok-free.app", "https://localhost", "https://127.0.0.1","http://localhost:3000" ]
